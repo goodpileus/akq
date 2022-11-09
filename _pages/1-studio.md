@@ -1,9 +1,9 @@
 ---
 layout: text
 order: 1
-title: "work"
+title: "studio"
 category: main
-slug: work
+slug: studio
 permalink: /:slug
 ---
 

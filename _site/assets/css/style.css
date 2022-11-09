@@ -1,240 +1,4 @@
 /* Fonts */
-/*
-  General
-*/
-::-webkit-scrollbar {
-  width: 10px;
-  height: 10px; }
-
-::-webkit-scrollbar-track {
-  background: rgba(0, 0, 0, 0.1);
-  border-left: 1px solid; }
-
-::-webkit-scrollbar-thumb {
-  background: rgba(0, 0, 0, 0.2); }
-
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  font-weight: bold; }
-
-html,
-body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden; }
-
-html {
-  font-family: "qt letter goth", monospace;
-  color: #685B61;
-  font-size: .85rem;
-  background: #D4D1D2; }
-
-body {
-  font-weight: lighter;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  width: 100%;
-  padding: 5rem 1rem 1rem 1rem; }
-
-/* Links */
-a {
-  color: #bd6c3a;
-  text-decoration: none; }
-
-/* `:focus` is linked to `:hover` for basic accessibility */
-a:hover,
-a:focus {
-  background: rgba(152, 152, 152, 0.15); }
-
-/* Headings */
-h1, h2, h3, h4, h5, h6 {
-  font-family: "qt letter goth", monospace;
-  font-weight: normal;
-  letter-spacing: -.025rem;
-  line-height: 1.25;
-  text-rendering: optimizeLegibility;
-  margin-bottom: 1rem;
-  margin-top: 1rem; }
-
-h1,
-h1.text-title {
-  font-size: 1.4rem; }
-
-h2 {
-  margin-top: 1rem;
-  font-size: 1.2rem; }
-
-h3, h4, h5, h6 {
-  margin-top: 1rem;
-  font-size: 1rem; }
-
-h3 {
-  margin-top: 1.5rem; }
-
-/* Body text */
-p {
-  margin-top: 0;
-  margin-bottom: 1rem; }
-
-/* Lists */
-ul {
-  list-style: circle; }
-
-ul, ol {
-  margin-top: 0;
-  margin-bottom: 1rem; }
-
-/* Horizontal ruler */
-hr {
-  position: relative;
-  margin: 1.5rem 0;
-  border: 0;
-  border-bottom: 1px solid;
-  overflow: visible; }
-
-/* Search highlighting */
-mark {
-  color: white;
-  background-color: rgba(0, 0, 0, 0.6); }
-
-/* Quotes */
-blockquote {
-  padding: 0rem 1.5rem 0rem 2rem;
-  margin: 0 0 20px 0;
-  color: #685B61;
-  border-left: none;
-  font-style: italic; }
-
-blockquote p:last-child {
-  margin-bottom: 0; }
-
-@media (min-width: 30em) {
-  blockquote {
-    padding-right: 5rem;
-    padding-left: 1.25rem; } }
-/* Images */
-img {
-  max-width: 100%; }
-
-/* Tables */
-table {
-  margin-bottom: 1rem;
-  width: 100%;
-  border: 1px solid;
-  border-collapse: collapse; }
-
-td,
-th {
-  padding: 3rem 1rem;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  width: 50%;
-  text-align: center; }
-
-tbody tr:nth-child(odd) td,
-tbody tr:nth-child(odd) th {
-  background-color: rgba(249, 249, 249, 0.03); }
-
-nav {
-  padding-top: .5rem;
-  border-bottom: 1px solid;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: #D4D1D2; }
-
-nav .name {
-  padding-left: 1rem; }
-
-.ground {
-  height: 1rem;
-  border-top: 1px solid;
-  margin-top: .5rem;
-  background-image: url("https://miswend.org/img/shurivsr.gif");
-  background-size: 1rem; }
-
-.ground.bottom {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%; }
-
-select {
-  font-family: inherit; }
-
-button {
-  cursor: pointer;
-  background: transparent;
-  color: inherit;
-  font-family: inherit;
-  border: 1px solid; }
-
-article.text {
-  max-width: 800px; }
-
-/* Footnotes styles */
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline; }
-
-sup {
-  top: -0.5em; }
-
-.footnotes {
-  line-height: 1.2rem;
-  font-size: 0.9rem;
-  letter-spacing: .01rem; }
-
-.footnotes .foot-block {
-  display: inline-block;
-  padding: 0 4rem 0 2rem;
-  margin-bottom: .8rem;
-  font-style: italic; }
-
-a.footnote {
-  padding-left: .1rem;
-  font-size: .66rem; }
-
-/*Bibliography styles */
-ol.bibliography {
-  list-style-type: none;
-  padding-left: 1rem;
-  text-indent: -1rem; }
-
-/* Diplomatic editions */
-ins,
-.add {
-  color: #288828;
-  font-style: italic; }
-
-del,
-.delete {
-  text-decoration: line-through;
-  color: #AA3232; }
-
-u,
-.underline {
-  text-decoration: underline; }
-
-article.photos {
-  display: flex;
-  flex-wrap: wrap; }
-
-article.photos div {
-  width: 25%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start; }
-
-article.photos img {
-  max-width: 90%;
-  max-height: 80%; }
-
 .highlight .hll {
   background-color: #ffc; }
 
@@ -566,3 +330,192 @@ pre code {
   src: url("../fonts/qtlettergoth-bolditalic.woff2") format("woff2"), url("../fonts/qtlettergoth-bolditalic.woff") format("woff");
   font-weight: bold;
   font-style: italic; }
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; }
+
+html {
+  font-family: "qt letter goth", monospace;
+  color: #685B61;
+  font-size: .85rem;
+  background: #D4D1D2; }
+
+body {
+  font-weight: lighter;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  width: 100%;
+  padding: 5rem 1rem 1rem 1rem; }
+
+a {
+  color: #bd6c3a;
+  text-decoration: none; }
+
+a:hover,
+a:focus {
+  background: rgba(152, 152, 152, 0.15); }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "qt letter goth", monospace;
+  font-weight: normal;
+  letter-spacing: -.025rem;
+  line-height: 1.25;
+  text-rendering: optimizeLegibility;
+  margin-bottom: 1rem;
+  margin-top: 1rem; }
+
+h1,
+h1.text-title {
+  font-size: 1.4rem; }
+
+h2 {
+  margin-top: 1rem;
+  font-size: 1.2rem; }
+
+h3, h4, h5, h6 {
+  margin-top: 1rem;
+  font-size: 1rem; }
+
+h3 {
+  margin-top: 1.5rem; }
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem; }
+
+ul {
+  list-style: circle; }
+
+ul, ol {
+  margin-top: 0;
+  margin-bottom: 1rem; }
+
+hr {
+  position: relative;
+  margin: 1.5rem 0;
+  border: 0;
+  border-bottom: 1px solid;
+  overflow: visible; }
+
+img {
+  max-width: 100%; }
+
+table {
+  margin-bottom: 1rem;
+  width: 100%;
+  border: 1px solid;
+  border-collapse: collapse; }
+
+td,
+th {
+  padding: 3rem 1rem;
+  border: 1px solid;
+  width: 50%;
+  text-align: center; }
+
+select {
+  font-family: inherit; }
+
+button {
+  cursor: pointer;
+  background: transparent;
+  color: inherit;
+  font-family: inherit;
+  border: 1px solid; }
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+del {
+  text-decoration: line-through; }
+
+u {
+  text-decoration: underline; }
+
+nav {
+  padding-top: .5rem;
+  border-bottom: 1px solid;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #D4D1D2; }
+
+nav .name {
+  padding-left: 1rem; }
+
+.ground {
+  height: 1rem;
+  border-top: 1px solid;
+  margin-top: .5rem;
+  background-image: url("https://miswend.org/img/shurivsr.gif");
+  background-size: 1rem; }
+
+.ground.bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%; }
+
+article.text {
+  max-width: 800px; }
+
+article.photos {
+  display: flex;
+  flex-wrap: wrap; }
+
+article.photos .item {
+  width: 25%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 2%; }
+
+article.photos .item.hide {
+  opacity: 0;
+  pointer-events: none; }
+
+article.photos .item.active {
+  background: rgba(0, 0, 0, 0.485);
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-top: 4rem; }
+
+article.photos .item .caption {
+  display: none; }
+
+article.photos .item.active .caption {
+  display: block;
+  position: absolute;
+  bottom: 1rem;
+  color: white; }
+
+article.photos img {
+  max-height: 80vh;
+  cursor: zoom-in; }
+
+article.photos .item.active img {
+  cursor: zoom-out; }
+
+@media screen and (max-width: 800px) {
+  article.photos div {
+    width: 50%; } }

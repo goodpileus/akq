@@ -1,8 +1,8 @@
 ---
 layout: photos
-title:  "photos"
+title:  "photo"
 order: 2
 category: main
-slug: photos
+slug: photo
 permalink: /:slug/2022
 ---
