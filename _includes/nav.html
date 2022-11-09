@@ -1,0 +1,61 @@
+<nav class="menu" id="nav">
+  <span class="name">aidan quinlan</span>
+  <!-- check if on the photos page, to override the option selection and display the year category -->
+
+  {% if page.layout == 'photos' %}
+
+  <select name="rooms" onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+
+    {% assign groups = site.pages | group_by: "category" | sort: "order" %}
+    {% for group in groups %}
+      
+      {% if group.name == 'main' %}
+        {% for item in group.items %}
+          <option class="menu-item" {% if item.title == 'photos' %}selected="selected"{% endif %} value="{{ site.baseurl }}{{ item.url }}">
+            {{ item.title }}
+          </option>
+        {%endfor%}
+      {%endif%}
+    {%endfor%}
+    
+  </select>
+
+  <select name="years" onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+    {% assign groups = site.pages | group_by: "category" %}
+      {% for group in groups %}
+        
+        {% if group.name == 'year' %}
+          {% for item in group.items reversed %}
+            <option class="menu-item" {% if page.url == item.url %}selected="selected"{% endif %} value="{{ site.baseurl }}{{ item.url }}">
+              {{ item.title }}
+            </option>
+          {%endfor%}
+        {%endif%}
+      {%endfor%}
+  
+  </select>
+
+  {% else %}
+
+  <select name="rooms" onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+
+    {% assign groups = site.pages | group_by: "category" | sort: "order" %}
+    {% for group in groups %}
+      
+      {% if group.name == 'main' %}
+        {% for item in group.items %}
+          <option class="menu-item" {% if page.url == item.url %}selected="selected"{% endif %} value="{{ site.baseurl }}{{ item.url }}">
+            {{ item.title }}
+          </option>
+        {%endfor%}
+      {%endif%}
+    {%endfor%}
+    
+  </select>
+
+  {% endif %}
+
+
+
+  <div class="ground"></div>
+</nav>
