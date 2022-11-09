@@ -4,7 +4,7 @@ title:  "directory"
 order: 0
 category: main
 slug: directory
-permalink: 
+permalink: /
 ---
 
 <p>hello, welcome to my home</p>
