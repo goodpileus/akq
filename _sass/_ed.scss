@@ -287,10 +287,10 @@ article.photos {
 
 article.photos div {
   width:25%;
-  height:40vh;
+  // height:40vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 article.photos img {
