@@ -5,30 +5,16 @@ sitemap: false
 /* Fonts */
 $main-font: 'qt letter goth', monospace;
 $heading-font: 'qt letter goth', monospace;
-$regular-font-size: 1em;
 
-$text-color: rgba(0, 0, 0, 0.6);
-$heading-color: rgba(0, 0, 0, 0.6);
-$border-color: rgba(0, 0, 0, 0.2);
-$link-color: rgba(0, 0, 0, 0.6);
-
-// $bg: #a6a55a;
-
-// $bg: #685B61;
 $bg: #D4D1D2;
 
 $acc: rgba(152, 152, 152, 0.15);
 
-$shading: #bcb7b9;
-$active: #e8e3e4;
-
-// $text: #D4D1D2;
-$text: #685B61;
+$text: #4c4247;
 $link: #bd6c3a;
 $link-hover: rgba(222, 115, 93, 0.4);
 
 $max-width: 800px;
-$br: .8rem;
 
 @import "syntax";
 
@@ -90,7 +76,7 @@ body {
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
   width:100%;
-
+  color:inherit;
   padding:5rem 1rem 1rem 1rem;
 }
 
@@ -186,7 +172,12 @@ th {
 // Interface
 // ----------
 select {
+  color:inherit;
   font-family: inherit;
+  // background: rgba(126, 126, 126, 0.1);
+  background: transparent;
+  border:1px solid;
+  border-radius:2px;
 }
 
 button {
@@ -270,11 +261,11 @@ article.photos {
 }
 
 article.photos .item {
-  width:25%;
+  width:12.5%;
   // height:40vh;
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   padding:2%;
   // border:1px solid;
 }
@@ -285,7 +276,7 @@ article.photos .item.hide {
 }
 
 article.photos .item.active {
-  background:rgba(0, 0, 0, 0.485);
+  // background:rgba(0, 0, 0, 0.485);
   width:100%;
   height:100vh;
   justify-content: center;
@@ -293,7 +284,10 @@ article.photos .item.active {
   position:fixed;
   top:0;
   left:0;
-  padding-top:4rem;
+  padding-top:5.5rem;
+  padding-bottom:4rem;
+  z-index: 2;
+  pointer-events: none;
 }
 
 article.photos .item .caption {
@@ -304,17 +298,38 @@ article.photos .item.active .caption {
   display:block;
   position:absolute;
   bottom:1rem;
+  left:50%;
+  transform: translateX(-50%);
   color:white;
+  z-index: 2;
+  pointer-events: auto;
 }
 
 article.photos img {
   // max-width:90%;
-  max-height:80vh;
+  max-height:100%;
   cursor: zoom-in;
+  pointer-events: auto;
 }
 
 article.photos .item.active img {
   cursor: zoom-out;
+}
+
+.lightbox-bg {
+  background:rgb(255, 255, 255);
+  mix-blend-mode: exclusion;
+  position: fixed;
+  top:0;
+  left:0;
+  height:100vh;
+  width:100vw;
+  z-index: 1;
+  display:none;
+}
+
+.lightbox-bg.active {
+  display:block;
 }
 
 
@@ -323,8 +338,8 @@ article.photos .item.active img {
 // -------------
 @media screen and (max-width:800px) {
   
-  article.photos div {
-    width:50%;
+  article.photos .item {
+    width:33.333%;
   }
 
 }

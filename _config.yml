@@ -1,7 +1,7 @@
 # Built with Jekyll 3.6.0
 
 # Setup
-title:               Aidan Quinlan
+title:               aidan
 tagline:             ''
 description:         'my home'
 url:                 'https://aidanquinlan.net'
@@ -23,8 +23,6 @@ encoding: utf-8
 # Collections for texts
 collections:
   pages:
-    output: true
-  photos:
     output: true
 
 # Markdown specs

@@ -7,5 +7,9 @@ slug: directory
 permalink: /
 ---
 
-<p>hello, welcome to my home</p>
+hello, welcome to my home
+
+i'm still working on getting the rooms together
+
+trying to share a little more than i usually do...
 
