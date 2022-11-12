@@ -1,0 +1,23 @@
+---
+layout: default
+---
+<article class="studio">
+{% for project in site.studio %}
+
+  <details>
+    <summary>{{ project.title }}</summary>
+    <div>
+      {{ project.tags }}<br>
+      {{ project.description }}<br>
+
+      
+      {% if project.link %}
+        visit: <a href="{{ project.link }}">{{ project.link }}</a>
+      {% endif %}
+    </div>
+  </details>
+
+{% endfor %}
+</article>
+
+

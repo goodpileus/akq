@@ -1,11 +1,8 @@
 ---
-layout: text
+layout: studio
 order: 1
 title: "studio"
 category: main
 slug: studio
 permalink: /:slug
 ---
-
-- handmade-web.net
-- aidanquinlan.net

@@ -24,6 +24,10 @@ encoding: utf-8
 collections:
   pages:
     output: true
+  studio:
+    output: true
+  photo:
+    output: true
 
 # Markdown specs
 markdown: kramdown

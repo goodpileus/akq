@@ -1,4 +1,5 @@
 <nav class="menu" id="nav">
+  <img class="icon" src="{{ site.baseurl }}/assets/favicon.png" title="patience">
   <span class="name">aidan</span>
   <!-- check if on the photos page, to override the option selection and display the year category -->
 
@@ -21,7 +22,7 @@
   </select>
 
   <select name="years" onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
-    {% assign groups = site.pages | group_by: "category" %}
+    {% assign groups = site.photo | group_by: "category" %}
       {% for group in groups %}
         
         {% if group.name == 'year' %}

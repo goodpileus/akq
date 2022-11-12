@@ -225,7 +225,13 @@ nav {
 }
 
 nav .name {
+}
+
+nav .icon {
   padding-left:1rem;
+  height:16px;
+  position: relative;
+  top:2px;
 }
 
 .ground {
@@ -330,6 +336,33 @@ article.photos .item.active img {
 
 .lightbox-bg.active {
   display:block;
+}
+
+
+// Studio
+// ------------
+
+details{
+  border-bottom:1px solid;
+}
+
+summary {
+  padding:.5rem 0;
+  display: block;
+  cursor:pointer;
+}
+
+summary:hover {
+  background: $acc;
+}
+
+summary::selection {
+  background: transparent;
+  color: var(--color);
+}
+
+details div {
+  padding:.5rem 0;
 }
 
 
