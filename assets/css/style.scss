@@ -10,8 +10,13 @@ $bg: #D4D1D2;
 
 $acc: rgba(152, 152, 152, 0.15);
 
+$web:rgba(163, 173, 102, 0.15);
+$teach:rgba(159, 130, 78, 0.15);
+$software:rgba(152, 152, 152, 0.15);
+$pub:rgba(152, 152, 152, 0.15);
+
 $text: #4c4247;
-$link: #bd6c3a;
+$link: #52618b;
 $link-hover: rgba(222, 115, 93, 0.4);
 
 $max-width: 800px;
@@ -85,7 +90,7 @@ body {
 // ----------
 a {
   color: $link;
-  text-decoration: none;
+  // text-decoration: none;
 }
 
 a:hover,
@@ -343,26 +348,76 @@ article.photos .item.active img {
 // ------------
 
 details{
+  // border-bottom:1px solid;
+}
+
+details[open] {
   border-bottom:1px solid;
 }
 
 summary {
   padding:.5rem 0;
-  display: block;
+  display: flex;
   cursor:pointer;
+  // justify-content: space-between;
+  align-items: baseline;
 }
 
-summary:hover {
+summary:hover,
+details[open] summary {
   background: $acc;
 }
 
-summary::selection {
+// website
+summary.website:hover,
+details[open] summary.website {
+  background: $web;
+}
+
+// teaching
+summary.teaching:hover,
+details[open] summary.teaching {
+  background: $teach;
+}
+
+// software
+summary.software:hover,
+details[open] summary.software {
+  background: $software;
+}
+
+// publication
+summary.publication:hover,
+details[open] summary.publication {
+  background: $pub;
+}
+
+
+summary span:first-of-type {
+  font-size: 80%;
+  width:75px;
+}
+
+summary span::selection {
   background: transparent;
   color: var(--color);
 }
 
-details div {
+details .drawer {
+  padding:.5rem 75px;
+}
+
+details .drawer div {
   padding:.5rem 0;
+}
+
+article.studio img {
+  width:150px;
+}
+
+article.studio .proj-link {
+  margin-bottom:.5rem;
+  display: inline-block;
 }
 
 

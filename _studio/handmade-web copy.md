@@ -1,15 +1,15 @@
 ---
 layout: studio
-title:  "handmade-web.net"
+title:  "leeraewalsh.com"
 category: studio
-slug: "handmade-web"
+slug: "lee"
 permalink: /studio/:slug
 
-year: '2018+'
-tags: website teaching
+year: '2022'
+tags: website
 
-description: 'an introduction to making websites by hand. teaching at VCU'
-link: 'https://handmade-web.net'
+description: 'a site for my friend lee'
+link: 'https://leeraewalsh.com'
 ---
 
 

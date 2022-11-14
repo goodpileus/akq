@@ -356,8 +356,7 @@ body {
   padding: 5rem 1rem 1rem 1rem; }
 
 a {
-  color: #bd6c3a;
-  text-decoration: none; }
+  color: #52618b; }
 
 a:hover,
 a:focus {
@@ -545,23 +544,55 @@ article.photos .item.active img {
 .lightbox-bg.active {
   display: block; }
 
-details {
+details[open] {
   border-bottom: 1px solid; }
 
 summary {
   padding: .5rem 0;
-  display: block;
-  cursor: pointer; }
+  display: flex;
+  cursor: pointer;
+  align-items: baseline; }
 
-summary:hover {
+summary:hover,
+details[open] summary {
   background: rgba(152, 152, 152, 0.15); }
 
-summary::selection {
+summary.website:hover,
+details[open] summary.website {
+  background: rgba(163, 173, 102, 0.15); }
+
+summary.teaching:hover,
+details[open] summary.teaching {
+  background: rgba(159, 130, 78, 0.15); }
+
+summary.software:hover,
+details[open] summary.software {
+  background: rgba(152, 152, 152, 0.15); }
+
+summary.publication:hover,
+details[open] summary.publication {
+  background: rgba(152, 152, 152, 0.15); }
+
+summary span:first-of-type {
+  font-size: 80%;
+  width: 75px; }
+
+summary span::selection {
   background: transparent;
   color: var(--color); }
 
-details div {
+details .drawer {
+  padding: .5rem 75px; }
+
+details .drawer div {
   padding: .5rem 0; }
+
+article.studio img {
+  width: 150px; }
+
+article.studio .proj-link {
+  margin-bottom: .5rem;
+  display: inline-block; }
 
 @media screen and (max-width: 800px) {
   article.photos .item {
