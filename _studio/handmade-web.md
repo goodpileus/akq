@@ -5,6 +5,8 @@ category: studio
 slug: "handmade-web"
 permalink: /studio/:slug
 
+more: true
+
 year: '2018+'
 tags: teaching
 

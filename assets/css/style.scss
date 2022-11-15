@@ -362,33 +362,38 @@ summary {
   cursor:pointer;
   // justify-content: space-between;
   align-items: baseline;
+  pointer-events: none;
 }
 
-summary:hover,
-details[open] summary {
+summary .handle {
+  pointer-events: auto;
+}
+
+summary .handle:hover,
+details[open] summary{
   background: $acc;
 }
 
 // website
-summary.website:hover,
-details[open] summary.website {
+summary.website .handle:hover,
+details[open] summary.website{
   background: $web;
 }
 
 // teaching
-summary.teaching:hover,
+summary.teaching .handle:hover,
 details[open] summary.teaching {
   background: $teach;
 }
 
 // software
-summary.software:hover,
+summary.software .handle:hover,
 details[open] summary.software {
   background: $software;
 }
 
 // publication
-summary.publication:hover,
+summary.publication .handle:hover,
 details[open] summary.publication {
   background: $pub;
 }
@@ -412,13 +417,21 @@ details .drawer div {
   padding:.5rem 0;
 }
 
-article.studio img {
+.studio img {
   width:150px;
+  cursor: zoom-in;
 }
 
-article.studio .proj-link {
-  margin-bottom:.5rem;
+.studio img.active {
+  width:auto;
+  height:100%;
+  max-height:70vh;
+  cursor: zoom-out;
+}
+
+.studio .proj-link {
   display: inline-block;
+  pointer-events: auto;
 }
 
 

@@ -7,13 +7,25 @@ layout: default
   <details>
     <summary class="{{ project.tags }}">
       <span>{{ project.year }}</span>
-      <span>{{ project.title }}</span>
+      <span>
+
+        {% if project.link %}
+          <a class="proj-link" href="{{ project.link }}">{{ project.title }}</a>
+        {% else %}
+          {{ project.title }}
+        {% endif %}
+        &nbsp;&nbsp;
+      </span>
+      
+      {% if project.more %}
+        <span class="handle">[+]</span>
+      {% endif %}
     </summary>
     <div class="drawer">
 
-      {% if project.link %}
+      <!-- {% if project.link %}
         <a class="proj-link" href="{{ project.link }}">{{ project.link }}</a><br>
-      {% endif %}
+      {% endif %} -->
 
       {{ project.description }}<br>
       

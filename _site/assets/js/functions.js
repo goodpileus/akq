@@ -26,5 +26,9 @@ $(".lightbox-bg").click(function() {
   $(".item").removeClass('active');
 });
 
+$(".studio img").click(function() {
+  $( this ).toggleClass( 'active');
+});
+
 
 

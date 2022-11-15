@@ -5,6 +5,8 @@ category: studio
 slug: "lee"
 permalink: /studio/:slug
 
+more: true
+
 year: '2022'
 tags: website
 
