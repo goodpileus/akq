@@ -20,7 +20,7 @@ permalink: /:title/
 # Set encoding to UTF-8
 encoding: utf-8
 
-# Collections for texts
+# Collections
 collections:
   pages:
     output: true

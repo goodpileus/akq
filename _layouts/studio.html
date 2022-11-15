@@ -17,7 +17,11 @@ layout: default
       {{ project.description }}<br>
 
       <div class="images">
-        {{ project.content }}
+        <!-- {{ project.content }} -->
+
+        {% for image in project.images %}
+          <img src="{{ image.path }}">
+        {% endfor %}
       </div>
 
       <!-- {% for tag in project.tags %}
