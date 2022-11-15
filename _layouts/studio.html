@@ -14,15 +14,18 @@ layout: default
       {% if project.link %}
         <a class="proj-link" href="{{ project.link }}">{{ project.link }}</a><br>
       {% endif %}
+
       {{ project.description }}<br>
+      
+      {{ project.content }}
 
+      {% if project.images %}
       <div class="images">
-        <!-- {{ project.content }} -->
-
         {% for image in project.images %}
           <img src="{{ image.path }}">
         {% endfor %}
       </div>
+      {% endif %}
 
       <!-- {% for tag in project.tags %}
         {{tag}}{% unless forloop.last %},

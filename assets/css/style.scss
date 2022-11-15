@@ -303,10 +303,6 @@ article.photos .item.active {
 
 article.photos .item .caption {
   display:none;
-}
-
-article.photos .item.active .caption {
-  display:block;
   position:absolute;
   bottom:1rem;
   left:50%;
@@ -314,6 +310,11 @@ article.photos .item.active .caption {
   color:white;
   z-index: 2;
   pointer-events: auto;
+  text-decoration: none;
+}
+
+article.photos .item.active .caption {
+  display:block;
 }
 
 article.photos img {

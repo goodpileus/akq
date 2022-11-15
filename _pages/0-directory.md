@@ -13,5 +13,3 @@ i'm still working on getting the rooms together
 
 trying to share a little more than i usually do...
 
-{{ site.baseurl }}
-

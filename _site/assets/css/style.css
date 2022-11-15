@@ -510,17 +510,18 @@ article.photos .item.active {
   pointer-events: none; }
 
 article.photos .item .caption {
-  display: none; }
-
-article.photos .item.active .caption {
-  display: block;
+  display: none;
   position: absolute;
   bottom: 1rem;
   left: 50%;
   transform: translateX(-50%);
   color: white;
   z-index: 2;
-  pointer-events: auto; }
+  pointer-events: auto;
+  text-decoration: none; }
+
+article.photos .item.active .caption {
+  display: block; }
 
 article.photos img {
   max-height: 100%;
