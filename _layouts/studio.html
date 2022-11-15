@@ -22,7 +22,7 @@ layout: default
       {% if project.images %}
       <div class="images">
         {% for image in project.images %}
-          <img src="{{ image.path | relative_path }}">
+          <img src="{{ image.path | absolute_url }}">
         {% endfor %}
       </div>
       {% endif %}
