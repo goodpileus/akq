@@ -12,6 +12,6 @@ description: 'an introduction to making websites by hand. teaching at VCU'
 link: 'https://handmade-web.net'
 
 images:
-  - path: studio/img/hw/hw-screen1.png
-  - path: studio/img/hw/hw-screen2.png
+  - path: /studio/img/hw/hw-screen1.png
+  - path: /studio/img/hw/hw-screen2.png
 ---
