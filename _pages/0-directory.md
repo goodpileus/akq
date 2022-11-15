@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: text
 title:  "directory"
 order: 0
 category: main

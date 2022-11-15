@@ -478,25 +478,27 @@ nav .icon {
   left: 0;
   width: 100%; }
 
-article.text {
-  max-width: 800px; }
+.text {
+  max-width: 800px;
+  padding-left: 75px;
+  padding-top: .5rem; }
 
-article.photos {
+.photos {
   display: flex;
   flex-wrap: wrap; }
 
-article.photos .item {
+.photos .item {
   width: 12.5%;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 2%; }
 
-article.photos .item.hide {
+.photos .item.hide {
   opacity: 0;
   pointer-events: none; }
 
-article.photos .item.active {
+.photos .item.active {
   width: 100%;
   height: 100vh;
   justify-content: center;
@@ -509,7 +511,7 @@ article.photos .item.active {
   z-index: 2;
   pointer-events: none; }
 
-article.photos .item .caption {
+.photos .item .caption {
   display: none;
   position: absolute;
   bottom: 1rem;
@@ -520,15 +522,15 @@ article.photos .item .caption {
   pointer-events: auto;
   text-decoration: none; }
 
-article.photos .item.active .caption {
+.photos .item.active .caption {
   display: block; }
 
-article.photos img {
+.photos img {
   max-height: 100%;
   cursor: zoom-in;
   pointer-events: auto; }
 
-article.photos .item.active img {
+.photos .item.active img {
   cursor: zoom-out; }
 
 .lightbox-bg {
@@ -607,5 +609,5 @@ details .drawer div {
   pointer-events: auto; }
 
 @media screen and (max-width: 800px) {
-  article.photos .item {
+  .photos .item {
     width: 33.333%; } }
