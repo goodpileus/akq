@@ -1,10 +1,10 @@
 <nav class="menu" id="nav">
-  <img class="icon" src="{{ site.baseurl }}/assets/favicon.png" title="patience">
-  <span class="name">aidan</span>
+  <span class="name-wrap">
+    <img class="icon" src="{{ site.baseurl }}/assets/favicon.png" title="patience">
+    <span class="name" title="aidan quinlan">aidan</span>
+  </span>
   <!-- check if on the photos page, to override the option selection and display the year category -->
-
   {% if page.layout == 'photos' %}
-
   <select name="rooms" onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
 
     {% assign groups = site.pages | group_by: "category" | sort: "order" %}

@@ -345,7 +345,7 @@ html {
   font-family: "qt letter goth", monospace;
   color: #4c4247;
   font-size: .85rem;
-  background: #D4D1D2; }
+  background: #f1e8d9; }
 
 body {
   font-weight: lighter;
@@ -391,11 +391,12 @@ p {
   margin-bottom: 1rem; }
 
 ul {
-  list-style: circle; }
+  list-style-type: '- '; }
 
 ul, ol {
   margin-top: 0;
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+  padding-left: 2rem; }
 
 hr {
   position: relative;
@@ -452,35 +453,43 @@ u {
 
 nav {
   padding-top: .5rem;
-  border-bottom: 1px solid;
   position: fixed;
+  border-bottom: 1px solid;
   top: 0;
   left: 0;
   width: 100%;
-  background: #D4D1D2; }
+  background: #f1e8d9; }
+
+nav .name-wrap {
+  width: 73px;
+  display: inline-block;
+  margin-left: 1rem; }
 
 nav .icon {
-  padding-left: 1rem;
   height: 16px;
   position: relative;
   top: 2px; }
 
 .ground {
-  height: 1rem;
+  height: 14px;
   border-top: 1px solid;
   margin-top: .5rem;
-  background-image: url("https://miswend.org/img/shurivsr.gif");
-  background-size: 1rem; }
+  background-image: url("../border2.gif");
+  background-size: 12px;
+  background-repeat: repeat-x;
+  background-position: center; }
 
 .ground.bottom {
+  background: #f1e8d9;
   position: fixed;
   bottom: 0;
   left: 0;
+  background-image: none;
   width: 100%; }
 
 .text {
   max-width: 800px;
-  padding-left: 75px;
+  padding-left: 80px;
   padding-top: .5rem; }
 
 .photos {
@@ -488,7 +497,7 @@ nav .icon {
   flex-wrap: wrap; }
 
 .photos .item {
-  width: 12.5%;
+  width: 10%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -582,14 +591,14 @@ details[open] summary.publication {
 
 summary span:first-of-type {
   font-size: 80%;
-  width: 75px; }
+  width: 80px; }
 
 summary span::selection {
   background: transparent;
   color: var(--color); }
 
 details .drawer {
-  padding: .5rem 75px; }
+  padding: .5rem 80px; }
 
 details .drawer div {
   padding: .5rem 0; }
